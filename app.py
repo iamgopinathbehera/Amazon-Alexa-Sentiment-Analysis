@@ -8,6 +8,8 @@ from nltk.stem.porter import PorterStemmer
 import matplotlib.pyplot as plt
 import base64
 
+nltk.download('stopwords')
+
 # Load necessary models and vectorizers
 predictor = pickle.load(open(r"Models/model_xgb.pkl", "rb"))
 scaler = pickle.load(open(r"Models/scaler.pkl", "rb"))
