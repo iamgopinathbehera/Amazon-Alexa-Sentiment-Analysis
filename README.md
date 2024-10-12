@@ -67,16 +67,4 @@ Improve the accuracy of the model by experimenting with different architectures 
 Add support for more detailed visualizations and language translations.
 
 
-Developed by: Gopinath Behera
-
-### Explanation:
-1. **Logos:** Added logos for Amazon Alexa and Streamlit.
-2. **Project Overview:** Describes the project's goal and functionality.
-3. **Streamlit App Link:** Provides the link to the deployed app.
-4. **Project Structure:** Explains the directory and file layout.
-5. **EDA Section:** Summarizes key findings from the exploratory analysis.
-6. **Modeling:** Details the preprocessing, training, and evaluation steps.
-7. **Usage Instructions:** Guides users on running the app locally and using it.
-8. **Results & Future Work:** Summarizes the results and outlines future improvements.
-
-Let me know if you’d like to make any changes!
+Developed by: Gopinath Behera 
