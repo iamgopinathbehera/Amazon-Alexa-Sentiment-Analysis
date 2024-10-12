@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project performs **sentiment analysis** on Amazon Alexa user reviews using advanced machine learning techniques. The model predicts whether a given review is **Positive** or **Negative** based on the review's text content. By leveraging **Natural Language Processing (NLP)** and **Machine Learning**, we achieve high-accuracy sentiment classification to gain valuable insights into user experiences with Alexa.
+This project performs **sentiment analysis** on Amazon Alexa user reviews using advanced machine learning techniques. The model predicts whether a given review is **Positive** or **Negative** based on the review's text content. By leveraging **Natural Language Processing (NLP)** and **Machine Learning**, we achieve good-accuracy sentiment classification to gain valuable insights into user experiences with Alexa.
 
 ## Streamlit Web Application
 
@@ -26,10 +26,6 @@ Key Features:
 - [Modeling](#modeling)
 - [Evaluation](#evaluation)
 - [Usage](#usage)
-- [Results](#results)
-- [Future Work](#future-work)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Structure
 
@@ -40,13 +36,10 @@ Key Features:
 │   ├── scaler.pkl           # Scaler used for feature scaling
 │   └── countVectorizer.pkl  # Vectorizer for text preprocessing
 ├── 📂 Notebooks/
-│   └── sentiment_analysis_EDA.ipynb  # Exploratory Data Analysis Notebook
+│   └── Amazon Alexa- Review Sentiment Analysis.ipynb  # Exploratory Data Analysis Notebook
 ├── 📂 Data/
 │   └── amazon_alexa_reviews.csv  # Dataset used
-├── 📂 src/
-│   ├── preprocess.py        # Text preprocessing functions
-│   ├── train_model.py       # Model training script
-│   └── evaluate_model.py    # Model evaluation script
+
 ├── app.py                   # Streamlit app source code
 ├── README.md                # Project documentation
 └── requirements.txt         # Required Python libraries
@@ -55,26 +48,28 @@ Key Features:
 ## Dataset
 
 The project uses the Amazon Alexa Reviews dataset, which contains:
-- Review text
-- Rating (1-5 stars)
-- Date of review
-- Device type
 
-Total number of reviews: X,XXX
+- rating (1 -5 )
+- date
+- variation
+- verified_reviews
+- feedback
+
+Total number of reviews: 3150
 
 ## Exploratory Data Analysis (EDA)
 
 Our comprehensive EDA revealed crucial insights about the Amazon Alexa reviews:
 
 1. **Sentiment Distribution:**
-   - Positive reviews: 80%
-   - Negative reviews: 20%
+   - Positive reviews: 91.87%
+   - Negative reviews: 8.13%
    
    This imbalance was addressed in our modeling approach to ensure fair classification.
 
 2. **Word Frequency Analysis:**
-   - Most common positive words: "love", "great", "easy", "awesome"
-   - Most common negative words: "disappointing", "difficult", "frustrating"
+   - Most common positive words: "love", "great", "easy", "awesome", etc.
+   - Most common negative words: "disappointing", "difficult", "frustrating", etc.
 
    ![Word Cloud](path/to/word_cloud.png)
 
@@ -86,8 +81,8 @@ Our comprehensive EDA revealed crucial insights about the Amazon Alexa reviews:
    ![Review Length Distribution](path/to/review_length_dist.png)
 
 4. **Rating Distribution:**
-   - 5-star ratings: 65%
-   - 1-star ratings: 10%
+   - 5-star ratings: 72.59%
+   - 1-star ratings: 5.11%
    - Strong correlation between rating and sentiment
 
    ![Rating Distribution](path/to/rating_dist.png)
@@ -164,32 +159,14 @@ streamlit run app.py
 ## Results
 
 Our XGBoost model achieved:
-- Accuracy: 92%
-- Precision: 94% (Positive), 86% (Negative)
-- Recall: 95% (Positive), 83% (Negative)
-- F1-score: 0.94 (Positive), 0.84 (Negative)
-- ROC-AUC: 0.95
+- Test Accuracy: 94%
+- Precision: 94.8% 
+- Recall: 98.5%
+- F1 Score: 98.6%
 
 These results demonstrate the model's strong performance in classifying Alexa review sentiments.
 
-## Future Work
-
-1. Implement advanced NLP techniques like BERT or RoBERTa for potentially improved performance
-2. Develop a multi-class sentiment model (e.g., Very Negative, Negative, Neutral, Positive, Very Positive)
-3. Integrate aspect-based sentiment analysis to provide more granular insights
-4. Expand the app to support real-time sentiment analysis of Alexa reviews from various sources
-5. Implement a user feedback loop to continuously improve model performance
-
-## Contributing
-
-We welcome contributions! Please see our [CONTRIBUTING.md](link-to-contributing-guide) for details on how to submit pull requests, report issues, or request features.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](link-to-license-file) file for details.
-
----
 
 Developed with ❤️ by Gopinath Behera
 
-[LinkedIn](https://www.linkedin.com/in/iamgopinathbehera/) | [Twitter](https://twitter.com/iamgopinathbera) | [Portfolio](https://iamgopinathbehera.github.io/)
+[LinkedIn](https://www.linkedin.com/in/gopinathbehera/)
