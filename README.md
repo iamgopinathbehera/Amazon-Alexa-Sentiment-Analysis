@@ -9,12 +9,14 @@ This project aims to perform **sentiment analysis** on Amazon Alexa user reviews
 ## Streamlit Web Application
 
 You can access the deployed application [here](https://amazon-alexa-sentiment-analysis-dfh55obrkh83nwut9kyfhn.streamlit.app/). The app supports:
+
 - Single text input for sentiment prediction.
 - Bulk prediction via CSV upload.
 
 ![Streamlit Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Streamlit_logo.png/800px-Streamlit_logo.png)
 
 ## Table of Contents
+
 - [Project Structure](#project-structure)
 - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 - [Modeling](#modeling)
@@ -24,9 +26,20 @@ You can access the deployed application [here](https://amazon-alexa-sentiment-an
 
 ## Project Structure
 
-📂 Amazon-Alexa-Sentiment-Analysis/ ├── 📁 Models/ │ ├── model_xgb.pkl # Trained XGBoost Model │ ├── scaler.pkl # Scaler used for feature scaling │ └── countVectorizer.pkl # Vectorizer for text preprocessing ├── 📂 Notebooks/ │ └── sentiment_analysis_EDA.ipynb # Exploratory Data Analysis Notebook ├── 📂 Data/ │ └── amazon_alexa_reviews.csv # Dataset used ├── app.py # Streamlit app source code ├── README.md # Project documentation └── requirements.txt # Required Python libraries
-
-
+```
+📂 Amazon-Alexa-Sentiment-Analysis/
+├── 📁 Models/
+│   ├── model_xgb.pkl        # Trained XGBoost Model
+│   ├── scaler.pkl           # Scaler used for feature scaling
+│   └── countVectorizer.pkl  # Vectorizer for text preprocessing
+├── 📂 Notebooks/
+│   └── sentiment_analysis_EDA.ipynb  # Exploratory Data Analysis Notebook
+├── 📂 Data/
+│   └── amazon_alexa_reviews.csv  # Dataset used
+├── app.py                   # Streamlit app source code
+├── README.md                # Project documentation
+└── requirements.txt         # Required Python libraries
+```
 
 ## Exploratory Data Analysis (EDA)
 
@@ -49,22 +62,28 @@ The sentiment analysis model was built using the **XGBoost** classifier after pr
 ### Running the App Locally
 
 To run the app locally, clone the repository and install the required dependencies:
+
 ```bash
 git clone https://github.com/iamgopinathbehera/Amazon-Alexa-Sentiment-Analysis.git
 cd Amazon-Alexa-Sentiment-Analysis
 pip install -r requirements.txt
 streamlit run app.py
+```
 
+### Example Usage in the App:
 
-Example Usage in the App:
-Single Input Mode: Enter a review and click "Predict Sentiment" to classify it.
-CSV Mode: Upload a CSV file containing reviews in a "text" column, and the app will classify all reviews.
-Results
+- **Single Input Mode:** Enter a review and click "Predict Sentiment" to classify it.
+- **CSV Mode:** Upload a CSV file containing reviews in a "text" column, and the app will classify all reviews.
+
+## Results
+
 The model achieved an accuracy of X% on the test data, with a precision of Y% for positive reviews and Z% for negative reviews.
+
 Detailed sentiment distribution graphs can be visualized in the Streamlit app for batch predictions.
-Future Work
-Improve the accuracy of the model by experimenting with different architectures and hyperparameters.
-Add support for more detailed visualizations and language translations.
 
+## Future Work
 
-Developed by: Gopinath Behera 
+- Improve the accuracy of the model by experimenting with different architectures and hyperparameters.
+- Add support for more detailed visualizations and language translations.
+
+Developed by: Gopinath Behera
