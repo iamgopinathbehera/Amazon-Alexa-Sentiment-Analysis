@@ -87,26 +87,26 @@ Our comprehensive EDA revealed crucial insights about the Amazon Alexa reviews:
    - Positive reviews tend to be shorter (avg. 45 words)
    - Negative reviews tend to be longer (avg. 60 words)
 
-   ![Review Length Distribution](path/to/review_length_dist.png)
+   ![Review Length Distribution]
 
 4. **Rating Distribution:** ⭐
    - 5-star ratings: 72.59%
    - 1-star ratings: 5.11%
    - Strong correlation between rating and sentiment
 
-   ![Rating Distribution](path/to/rating_dist.png)
+   ![Rating Distribution]
 
 5. **Temporal Analysis:** 📅
    - Sentiment trends over time show improvement in user satisfaction
    - Seasonal patterns observed (e.g., more positive reviews during holiday seasons)
 
-   ![Sentiment Over Time](path/to/sentiment_time_series.png)
+   ![Sentiment Over Time]
 
 6. **Device-specific Insights:** 🔊
    - Echo Dot received the highest proportion of positive reviews
    - Fire TV Stick had the most mixed sentiments
 
-   ![Device Sentiment Comparison](path/to/device_sentiment.png)
+   ![Device Sentiment Comparison]
 
 These insights guided our feature engineering and modeling strategies.
 
