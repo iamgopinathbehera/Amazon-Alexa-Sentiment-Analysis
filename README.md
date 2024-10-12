@@ -80,7 +80,7 @@ Our comprehensive EDA revealed crucial insights about the Amazon Alexa reviews:
    - Most common positive words: "love", "great", "easy", "awesome", etc.
    - Most common negative words: "disappointing", "difficult", "frustrating", etc.
 
-   ![Word Cloud](path/to/word_cloud.png)
+   [Note: The word cloud visualization is not currently visible in this README]
 
 3. **Review Length Analysis:** 📏
    - Average review length: 50 words
