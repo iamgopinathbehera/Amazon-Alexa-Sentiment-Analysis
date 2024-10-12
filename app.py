@@ -8,6 +8,7 @@ from nltk.stem.porter import PorterStemmer
 import matplotlib.pyplot as plt
 import base64
 
+import nltk
 nltk.download('stopwords')
 
 # Load necessary models and vectorizers
